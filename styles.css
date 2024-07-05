@@ -1,0 +1,90 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #87CEEB, #FFB6C1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    animation: bounceIn 1s ease-out;
+}
+
+h1 {
+    color: #4B0082;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.pet {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #C0C0C0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.pet:hover {
+    transform: scale(1.1) rotate(10deg);
+}
+
+#petImage {
+    width: 120px;
+    height: 120px;
+    transition: opacity 0.5s ease;
+}
+
+#buttons {
+    margin: 20px 0;
+}
+
+button {
+    margin: 10px;
+    padding: 15px 25px;
+    border: none;
+    background-color: #FF4500;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #FF6347;
+    transform: scale(1.1);
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #4682B4;
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

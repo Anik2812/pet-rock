@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Pet Rock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Virtual Pet Rock</h1>
+        <div id="pet" class="pet">
+            <img id="petImage" src="rock.png" alt="Pet Rock">
+        </div>
+        <div id="buttons">
+            <button id="feedButton">Feed</button>
+            <button id="playButton">Play</button>
+            <button id="musicButton">Play Music</button>
+        </div>
+        <p id="status">Your pet rock is waiting for some love!</p>
+    </div>
+    <audio id="backgroundMusic" src="background_music.mp3" loop></audio>
+    <audio id="feedSound" src="feed_sound.mp3"></audio>
+    <audio id="playSound" src="play_sound.mp3"></audio>
+    <script src="script.js"></script>
+</body>
+</html>
