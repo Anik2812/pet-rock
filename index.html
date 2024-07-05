@@ -7,21 +7,39 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="particles-js"></div>
     <div class="container">
-        <h1>Virtual Pet Rock</h1>
+        <h1 class="title">Virtual Pet Rock</h1>
         <div id="pet" class="pet">
             <img id="petImage" src="rock.png" alt="Pet Rock">
+            <div id="sparkles"></div>
+            <div id="confetti"></div>
         </div>
         <div id="buttons">
-            <button id="feedButton">Feed</button>
-            <button id="playButton">Play</button>
-            <button id="musicButton">Play Music</button>
+            <button id="feedButton" class="action-button">
+                <img src="feed_icon.png" alt="Feed" class="icon"> Feed
+            </button>
+            <button id="playButton" class="action-button">
+                <img src="play_icon.png" alt="Play" class="icon"> Play
+            </button>
+            <button id="musicButton" class="action-button">
+                <img src="music_icon.png" alt="Music" class="icon"> Play Music
+            </button>
         </div>
-        <p id="status">Your pet rock is waiting for some love!</p>
+        <p id="status" class="status-text">Your pet rock is waiting for some love!</p>
+        <div class="footer">
+            <p>Created with ❤️ by Anik</p>
+        </div>
     </div>
     <audio id="backgroundMusic" src="background_music.mp3" loop></audio>
     <audio id="feedSound" src="feed_sound.mp3"></audio>
     <audio id="playSound" src="play_sound.mp3"></audio>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function() {
+            console.log('particles.js config loaded');
+        });
+    </script>
 </body>
 </html>
